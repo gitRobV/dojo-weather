@@ -1,0 +1,23 @@
+<div class="wrapper" [ngStyle]="{ 'background-image': city_img }">
+    <h2 class="city">{{ selected_city | uppercase}}</h2>
+    <div class="side">
+        <div class="small">Humidity:
+            <span class="display">{{ city_weather.humidity }}%</span>
+        </div>
+        <div class="small">Low Today:
+            <span class="display">{{ city_weather.temp_min }}</span>
+        </div>
+        <div class="small">High Today:
+            <span class="display">{{ city_weather.temp_max }}</span>
+        </div>
+    </div>
+        <div class="temp">Current Temp:
+            <span class="display">{{ city_weather.temp_avg }}</span>
+        </div>
+        <div class="status">Status:
+            <span class="display">{{ city_weather.status }}</span>
+        </div>
+
+</div>
+
+<img src="{{ city_img }}" alt="">
